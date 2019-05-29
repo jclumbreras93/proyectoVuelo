@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="411.0" style="-fx-background-color: radial-gradient(focus-angle 0deg , focus-distance 5% , center 46% 50% , radius 78% , #f0ffff, #48d1cc);;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LogueoController">
+   <children>
+      <TextField fx:id="txUser" layoutX="171.0" layoutY="160.0" />
+      <PasswordField fx:id="txPass" layoutX="171.0" layoutY="219.0" onAction="#actionIntro" />
+      <Button fx:id="btnClose" layoutX="265.0" layoutY="283.0" mnemonicParsing="false" onAction="#actionClose" style="-fx-background-color: linear-gradient(from 74% 120% to 65% 53% , #ff0000, #f0ffff);; -fx-background-radius: 30%;" text="Cerrar" />
+      <Button fx:id="btnAccept" layoutX="107.0" layoutY="283.0" mnemonicParsing="false" onAction="#actionLogin" style="-fx-background-color: linear-gradient(from 74% 120% to 65% 53% , #ff0000, #f0ffff);; -fx-background-radius: 30%;" text="Aceptar" />
+      <Label fx:id="lbpass" layoutX="86.0" layoutY="223.0" text="Contraseña" />
+      <Label layoutX="86.0" layoutY="164.0" text="Usuario" />
+      <Button fx:id="btnRegistrar" layoutX="189.0" layoutY="283.0" mnemonicParsing="false" onAction="#actionRegistrar" style="-fx-background-color: linear-gradient(from 74% 120% to 65% 53% , #ff0000, #f0ffff);; -fx-background-radius: 30%;" text="Registrar" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="106.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/descarga.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
